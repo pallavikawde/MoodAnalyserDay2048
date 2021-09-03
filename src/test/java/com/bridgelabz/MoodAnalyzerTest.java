@@ -21,5 +21,15 @@ public class MoodAnalyzerTest {
 
             Assertions.assertEquals(mood,"HAPPY");
         }
+
+    @Test
+   public void when_null_return_happy() {
+            MoodAnalyzer moodAnalyzerobj = new MoodAnalyzer(null);
+        String mood = moodAnalyzerobj.analyzeMood("when null return happy");
+
+        Assertions.assertEquals(mood,"HAPPY");
     }
+
+    }
+
 
